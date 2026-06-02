@@ -59,7 +59,7 @@ body{background:var(--bg);color:var(--text);font-family:'Lato',sans-serif;font-w
 .panel-header{display:flex;align-items:center;justify-content:space-between;padding:1.25rem 2rem;border-bottom:1px solid var(--border);flex-shrink:0}
 .panel-title{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:0.08em;color:var(--white);display:flex;align-items:center;gap:0.5rem}
 .panel-title::before{content:'//';color:var(--accent)}
-.panel-close{background:none;border:1px solid var(--border2);color:var(--muted);width:32px;height:32px;cursor:pointer;font-size:1rem;transition:all 0.2s;display:flex;align-items:center;justify-content:center}
+.panel-close{background:var(--surface3);border:1px solid var(--border2);color:var(--text);width:38px;height:38px;cursor:pointer;font-size:1.1rem;font-weight:700;transition:all 0.2s;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .panel-close:hover{border-color:var(--accent);color:var(--accent2)}
 .panel-body{flex:1;overflow-y:auto;padding:2rem;scrollbar-width:thin;scrollbar-color:var(--muted2) transparent}
 
@@ -119,15 +119,16 @@ body{background:var(--bg);color:var(--text);font-family:'Lato',sans-serif;font-w
 
 @media(max-width:700px){
   html,body{overflow:auto}
-  .page{height:auto;min-height:100vh;padding:2.5rem 1.25rem 6rem}
+  .page{height:auto;min-height:100svh;padding:2.5rem 1.25rem 5rem;align-items:center}
+  .logo-wrap{width:100%;display:flex;justify-content:center}
   .logo-wrap img{height:90px}
-  .event-info{width:100%!important;max-width:340px}
-  .cards{flex-direction:row;flex-wrap:wrap;width:100%!important;max-width:340px}
-  .card{flex:1;min-width:100px;padding:1.25rem 0.5rem}
+  .event-info{width:90vw!important;max-width:400px;justify-content:center}
+  .cards{flex-direction:row;width:90vw!important;max-width:400px}
+  .card{flex:1;padding:1.25rem 0.5rem}
   .card-icon{font-size:1.2rem}
-  .card-title{font-size:0.65rem;letter-spacing:0.1em}
-  .panel{height:92vh}
-  .event-info-val{font-size:0.8rem}
+  .card-title{font-size:0.62rem;letter-spacing:0.08em}
+  .panel{height:92svh}
+  .event-info-val{font-size:0.82rem}
 }
 </style>
 </head>
